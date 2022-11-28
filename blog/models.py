@@ -5,6 +5,7 @@ import os
 
 class Post(models.Model):
     title = models.CharField(max_length=30)  # 제목은 30자 까지 지정
+    hook_text = models.CharField(max_length=100, blank=True)
     content = models.TextField()
 
     # 현재 시간
